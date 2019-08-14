@@ -17,18 +17,22 @@ const Factory = use('Factory')
 const Hash = use('Hash')
 
 Factory.blueprint('App/Models/User', async (faker) => {
-  const username = faker.username()
+  const spotify_id = faker.username()
   return {
-    username,
+    spotify_id,
     email: faker.email(),
-    password: await Hash.make(username)
+    display_name: faker.username(),
+    premium: faker.bool(),
+
   }
 })
 
 Factory.blueprint('App/Models/Playlist', async (faker, i, data) => {
   return {
-    user_id: data.user_id,
-    song_id: data.song_id,
+    spotify_id: data.spotify_id,
+    uri_link: data.uri_link,
+    position: data.position,
     progress_ms: data.progress_ms,
+    active: data.active
   }
 })

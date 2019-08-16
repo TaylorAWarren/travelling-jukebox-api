@@ -8,6 +8,7 @@ class PlaylistsSchema extends Schema {
     this.create('playlists', (table) => {
       table.increments()
       table.string('spotify_id', 254).notNullable().unique()
+      table.string('display_name', 254).notNullable()
       table.string('uri_link', 254).notNullable()
       table.integer('position').notNullable()
       table.integer('progress_ms').notNullable()

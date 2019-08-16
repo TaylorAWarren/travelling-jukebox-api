@@ -15,6 +15,7 @@ const Factory = use('Factory')
 
 const playlistData = [
   {
+    display_name: 'Taylor',
     spotify_id: 'nfxna1leqoph7v525cpm3a6cr',
     uri_link: 'spotify:playlist:4Opixibkf4mLxOnREXTq1I',
     position: 2,
@@ -22,12 +23,14 @@ const playlistData = [
     active: true,
   },
   {
+    display_name: 'Tom',
     spotify_id: 'kpe4iznisivy0txbbk76m0w46',
     uri_link: 'spotify:playlist:37i9dQZF1DWWBHeXOYZf74',
     position: 4,
     progress_ms: 30000,
     active: true,
   },{
+    display_name: 'Shelby',
     spotify_id: '22f63oznp4huleaxulv63sjxi',
     uri_link: 'spotify:playlist:48Jk76ryIuXOcOcK2wvDNP',
     position: 5,
@@ -35,6 +38,7 @@ const playlistData = [
     active: true,
   },
   {
+    display_name: 'Christabelle',
     spotify_id: 'e3itsm9xo2go4zn5j2lgmkg5g',
     uri_link: 'spotify:playlist:2WDXgJmHzcJlMMi02NsUaY',
     position: 0,
@@ -42,6 +46,7 @@ const playlistData = [
     active: true,
   },
   {
+    display_name: 'Sara',
     spotify_id: 'saralouwho',
     uri_link: 'spotify:playlist:62OqyAX5XFoXu0CykxhOyA',
     position: 1,

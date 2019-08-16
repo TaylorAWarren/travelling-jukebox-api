@@ -6,7 +6,7 @@ class PlaylistController {
   async show({ request, response }) {
     const { spotify_id } = request.all()
     const playlist = await Playlist.query().where(`spotify_id`, '=', spotify_id).fetch();
-    response.send(playlist)
+    response.send({playlist: playlist.rows[0]}  )
   }
 }
 
